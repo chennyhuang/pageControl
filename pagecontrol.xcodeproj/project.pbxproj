@@ -15,6 +15,8 @@
 		EE83109020DCA6AC006AE2C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE83108F20DCA6AC006AE2C1 /* main.m */; };
 		EE83109A20DCA6AD006AE2C1 /* pagecontrolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE83109920DCA6AD006AE2C1 /* pagecontrolTests.m */; };
 		EE8310A520DCA6AD006AE2C1 /* pagecontrolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8310A420DCA6AD006AE2C1 /* pagecontrolUITests.m */; };
+		EE8310B520DCA6EE006AE2C1 /* HZPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8310B420DCA6EE006AE2C1 /* HZPageControl.m */; };
+		EE8310BB20DCC9E0006AE2C1 /* ZWVerticalAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8310B920DCC9E0006AE2C1 /* ZWVerticalAlignLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		EE8310A020DCA6AD006AE2C1 /* pagecontrolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pagecontrolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8310A420DCA6AD006AE2C1 /* pagecontrolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pagecontrolUITests.m; sourceTree = "<group>"; };
 		EE8310A620DCA6AD006AE2C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8310B320DCA6EE006AE2C1 /* HZPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZPageControl.h; sourceTree = "<group>"; };
+		EE8310B420DCA6EE006AE2C1 /* HZPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZPageControl.m; sourceTree = "<group>"; };
+		EE8310B920DCC9E0006AE2C1 /* ZWVerticalAlignLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWVerticalAlignLabel.m; sourceTree = "<group>"; };
+		EE8310BA20DCC9E0006AE2C1 /* ZWVerticalAlignLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWVerticalAlignLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		EE83107F20DCA6AC006AE2C1 /* pagecontrol */ = {
 			isa = PBXGroup;
 			children = (
+				EE8310B220DCA6CF006AE2C1 /* pageControl */,
 				EE83108020DCA6AC006AE2C1 /* AppDelegate.h */,
 				EE83108120DCA6AC006AE2C1 /* AppDelegate.m */,
 				EE83108320DCA6AC006AE2C1 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				EE8310A620DCA6AD006AE2C1 /* Info.plist */,
 			);
 			path = pagecontrolUITests;
+			sourceTree = "<group>";
+		};
+		EE8310B220DCA6CF006AE2C1 /* pageControl */ = {
+			isa = PBXGroup;
+			children = (
+				EE8310BA20DCC9E0006AE2C1 /* ZWVerticalAlignLabel.h */,
+				EE8310B920DCC9E0006AE2C1 /* ZWVerticalAlignLabel.m */,
+				EE8310B320DCA6EE006AE2C1 /* HZPageControl.h */,
+				EE8310B420DCA6EE006AE2C1 /* HZPageControl.m */,
+			);
+			path = pageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +285,8 @@
 			files = (
 				EE83108520DCA6AC006AE2C1 /* ViewController.m in Sources */,
 				EE83109020DCA6AC006AE2C1 /* main.m in Sources */,
+				EE8310B520DCA6EE006AE2C1 /* HZPageControl.m in Sources */,
+				EE8310BB20DCC9E0006AE2C1 /* ZWVerticalAlignLabel.m in Sources */,
 				EE83108220DCA6AC006AE2C1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CU5KU23LFX;
 				INFOPLIST_FILE = pagecontrol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.retech.pagecontrol;
@@ -444,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CU5KU23LFX;
 				INFOPLIST_FILE = pagecontrol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.retech.pagecontrol;
